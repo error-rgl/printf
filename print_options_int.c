@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_int -
+ * print_int - converts a string to an integer.
  * @i: argument variadic passed from the printf function.
  * Return: lenght containing the number of characters.
  */
@@ -11,13 +11,13 @@ int print_int(va_list i)
 	unsigned int num;
 
 	list = va_arg(i, int);
-	if(list < 0)
+	if (list < 0)
 	{
 		_putchar('-');
 		num = list * -1;
 		length++;
 	}
-	else 
+	else
 		num = list;
 
 	while (num / variable > 9)
