@@ -25,6 +25,6 @@ int _putchar(char c);
 int print_string(va_list s);
 int print_char(va_list c);
 int (*search_character(const char *nxchr, int num))(va_list);
-
+int print_int(va_list i);
 #endif
 
