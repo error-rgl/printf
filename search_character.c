@@ -13,6 +13,8 @@ int (*search_character(const char *nxchr, int num))(va_list)
 	case_t options[] = {
 		{"s", print_string},
 		{"c", print_char},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 
