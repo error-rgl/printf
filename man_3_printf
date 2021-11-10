@@ -1,0 +1,63 @@
+.\" Hey! This file is the manual of our own printf function.
+.\"
+.\" Esta página de manual tiene Copyright (C) C16-2021 Holberton;
+.\" 2021 Error Rogelio 
+.\" 2021 Pether20.
+.\" You may distribute it under the terms of the GNU General
+.\" Public License. It comes with NO WARRANTY.
+.\"
+.TH _printf 3 09-11-2021 "printf system" "Printf Manual"
+.SH NAME
+.nf
+_printf - my command prints to screen the arguments given in the main string
+.fi
+.SH SINOPSIS
+.nf
+.B _printf
+receives a first format parameter of type char, then it receives the infinite arguments, which will be displayed in the order they are called.
+.fi
+.SH OPTIONS
+.TP
+.nf
+.B %
+This character allows you to bind the special character to make the call to the function you need.
+.fi
+.nf
+.B %c
+This character allows to call my function print a single character.
+.fi
+.nf
+.B %s
+This character allows to call my function to print the string
+.fi
+.nf
+.B %d
+This character allows to call my function print a decimal (base 10) number
+.fi
+.nf
+.B %i
+This character allows to call my function print an integer in base 10
+.fi
+.SH ENVIRONMENT
+.nf
+We use format to capture the entered string, and we use the variable va_list, to obtain all the entered arguments and to be able to iterate each time it is called.
+.fi
+.SH EXAMPLE
+.nf
+len = _printf("Let's try to printf a simple sentence.\n");
+_printf("Length:[%d, %i]\n", len, len);
+_printf("Character:[%c]\n", 'H');
+Show
+Let's try to printf a simple sentence.
+Length:[39, 39]
+Character:[H]
+.fi
+.SH AUTHORS
+.nf
+Written by Error Rogelio and Pether20.
+.fi
+.SH SEE ALSO
+.nf
+_printf(3)
+	Full documentation at: <https://github.com/error-rgl/printf.git>
+.fi
