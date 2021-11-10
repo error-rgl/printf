@@ -1,5 +1,5 @@
 #include "main.h"
-char *binconvert(int val, int base);
+
 /**
  * print_bin - converts a string to an integer.
  * @b: argument variadic passed from the printf function.
@@ -40,4 +40,4 @@ char *binconvert(unsigned int val, int base)
 		buf[i] = "0123456789abcdef"[val % base];
 
 	return (&buf[i + 1]);
-}i
+}

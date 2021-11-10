@@ -16,6 +16,11 @@ _printf - my command prints to screen the arguments given in the main string
 .B _printf
 receives a first format parameter of type char, then it receives the infinite arguments, which will be displayed in the order they are called.
 .fi
+.SH DESCRIPTION
+.nf
+The functions in the _printf() family produce output according to  a
+       format  as  described  below.
+.fi
 .SH OPTIONS
 .TP
 .nf
