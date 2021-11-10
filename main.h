@@ -26,5 +26,7 @@ int print_string(va_list s);
 int print_char(va_list c);
 int (*search_character(const char *nxchr, int num))(va_list);
 int print_int(va_list i);
+int print_bin(va_list b);
+char *binconvert(int val, int base);
 #endif
 
