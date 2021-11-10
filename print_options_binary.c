@@ -31,7 +31,7 @@ int print_bin(va_list b)
  * @base: convert base.
  * Return: lenght containing the number of characters.
  */
-char *binconvert(int val, int base)
+char *binconvert(unsigned int val, int base)
 {
 	static char buf[32] = {0};
 	int i = 30;
@@ -40,4 +40,4 @@ char *binconvert(int val, int base)
 		buf[i] = "0123456789abcdef"[val % base];
 
 	return (&buf[i + 1]);
-}
+}i
