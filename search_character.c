@@ -16,6 +16,7 @@ int (*search_character(const char *nxchr, int num))(va_list)
 		{"d", print_int},
 		{"i", print_int},
 		{"b", print_bin},
+		{"r", print_rev},
 		{NULL, NULL}
 	};
 
