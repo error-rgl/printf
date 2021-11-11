@@ -28,5 +28,6 @@ int (*search_character(const char *nxchr, int num))(va_list);
 int print_int(va_list i);
 int print_bin(va_list b);
 char *binconvert(unsigned int val, int base);
+int print_rev(va_list r);
 #endif
 
